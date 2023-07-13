@@ -9,8 +9,8 @@ use super::delta::shift_months;
 /// Relative time duration extending Chrono's Duration.
 #[derive(Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Debug, Hash)]
 pub struct RelativeDuration {
-    months: i32, // Sorry, cosmologists..
-    duration: Duration,
+    pub months: i32, // Sorry, cosmologists..
+    pub duration: Duration,
 }
 
 impl From<Duration> for RelativeDuration {
